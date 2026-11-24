@@ -1,0 +1,395 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═════════════════════════════════════════════════════════════════════
+   DOCUMIND THEME ENGINE: 4 Distinct Selectable Themes (Light & Dark)
+   ═════════════════════════════════════════════════════════════════════ */
+
+:root,
+html[data-theme='paper-pals'][data-mode='light'] {
+  --bg-page: #FAF6EE;
+  --bg-surface: #FFFFFF;
+  --bg-surface-hover: #FCFAF6;
+  --bg-surface-alt: #F4ECE1;
+  --bg-bento-1: #FFE7D6;
+  --bg-bento-2: #FEF3C7;
+  --bg-bento-3: #EFE4D6;
+  --bg-bento-4: #FFDFD6;
+  --text-main: #291E18;
+  --text-muted: #786458;
+  --text-faint: #A69284;
+  --border-main: #EADBCE;
+  --border-accent: #EA580C;
+  --primary: #EA580C;
+  --primary-hover: #C2410C;
+  --primary-light: #FFEDD5;
+  --primary-contrast: #FFFFFF;
+  --mascot-body: #FFFDF9;
+  --mascot-shadow: #EADBCE;
+  --mascot-outline: #291E18;
+  --mascot-accent: #EA580C;
+  --shadow-card: 0 4px 20px -2px rgba(41, 30, 24, 0.05), 0 2px 6px -1px rgba(41, 30, 24, 0.03);
+  --shadow-lift: 0 12px 30px -4px rgba(41, 30, 24, 0.1), 0 4px 10px -2px rgba(41, 30, 24, 0.05);
+}
+
+html[data-theme='paper-pals'][data-mode='dark'] {
+  --bg-page: #17110D;
+  --bg-surface: #221A15;
+  --bg-surface-hover: #2B211B;
+  --bg-surface-alt: #2E231C;
+  --bg-bento-1: #38251C;
+  --bg-bento-2: #342817;
+  --bg-bento-3: #2A211B;
+  --bg-bento-4: #3E241B;
+  --text-main: #FAF4EE;
+  --text-muted: #C0ACA0;
+  --text-faint: #7A675B;
+  --border-main: #392B23;
+  --border-accent: #FB923C;
+  --primary: #FB923C;
+  --primary-hover: #F97316;
+  --primary-light: #3A2315;
+  --primary-contrast: #17110D;
+  --mascot-body: #2B211A;
+  --mascot-shadow: #1D1510;
+  --mascot-outline: #EADBCE;
+  --mascot-accent: #FB923C;
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lift: 0 12px 30px -4px rgba(0, 0, 0, 0.6);
+}
+
+html[data-theme='dreamy-digital'][data-mode='light'] {
+  --bg-page: #F5F3FF;
+  --bg-surface: #FFFFFF;
+  --bg-surface-hover: #FAF8FF;
+  --bg-surface-alt: #EDE9FE;
+  --bg-bento-1: #E0E7FF;
+  --bg-bento-2: #EDE9FE;
+  --bg-bento-3: #E0F2FE;
+  --bg-bento-4: #FCE7F3;
+  --text-main: #1E1B4B;
+  --text-muted: #5B627A;
+  --text-faint: #9499B0;
+  --border-main: #DDD6FE;
+  --border-accent: #6366F1;
+  --primary: #6366F1;
+  --primary-hover: #4F46E5;
+  --primary-light: #EEF2FF;
+  --primary-contrast: #FFFFFF;
+  --mascot-body: #FAF8FF;
+  --mascot-shadow: #DDD6FE;
+  --mascot-outline: #1E1B4B;
+  --mascot-accent: #818CF8;
+  --shadow-card: 0 4px 20px -2px rgba(30, 27, 75, 0.06), 0 2px 6px -1px rgba(30, 27, 75, 0.03);
+  --shadow-lift: 0 12px 30px -4px rgba(99, 102, 241, 0.15);
+}
+
+html[data-theme='dreamy-digital'][data-mode='dark'] {
+  --bg-page: #0B0E1E;
+  --bg-surface: #131730;
+  --bg-surface-hover: #1A1F3F;
+  --bg-surface-alt: #1E2448;
+  --bg-bento-1: #232752;
+  --bg-bento-2: #26214B;
+  --bg-bento-3: #132B42;
+  --bg-bento-4: #351F3E;
+  --text-main: #F8FAFC;
+  --text-muted: #A5B4FC;
+  --text-faint: #6366F1;
+  --border-main: #272E5C;
+  --border-accent: #818CF8;
+  --primary: #818CF8;
+  --primary-hover: #A5B4FC;
+  --primary-light: #1E2554;
+  --primary-contrast: #0B0E1E;
+  --mascot-body: #1C2145;
+  --mascot-shadow: #11142E;
+  --mascot-outline: #C7D2FE;
+  --mascot-accent: #A78BFA;
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  --shadow-lift: 0 12px 30px -4px rgba(129, 140, 248, 0.2);
+}
+
+html[data-theme='organic-intelligence'][data-mode='light'] {
+  --bg-page: #F3F8F5;
+  --bg-surface: #FFFFFF;
+  --bg-surface-hover: #FAFCFA;
+  --bg-surface-alt: #E4EFE7;
+  --bg-bento-1: #DCFCE7;
+  --bg-bento-2: #FEF9C3;
+  --bg-bento-3: #E0F2FE;
+  --bg-bento-4: #E6F4EA;
+  --text-main: #062E1E;
+  --text-muted: #436353;
+  --text-faint: #789988;
+  --border-main: #CFE2D6;
+  --border-accent: #059669;
+  --primary: #059669;
+  --primary-hover: #047857;
+  --primary-light: #D1FAE5;
+  --primary-contrast: #FFFFFF;
+  --mascot-body: #F7FAF8;
+  --mascot-shadow: #CFE2D6;
+  --mascot-outline: #062E1E;
+  --mascot-accent: #10B981;
+  --shadow-card: 0 4px 20px -2px rgba(6, 46, 30, 0.05), 0 2px 6px -1px rgba(6, 46, 30, 0.03);
+  --shadow-lift: 0 12px 30px -4px rgba(5, 150, 105, 0.12);
+}
+
+html[data-theme='organic-intelligence'][data-mode='dark'] {
+  --bg-page: #07150E;
+  --bg-surface: #0E241A;
+  --bg-surface-hover: #142F22;
+  --bg-surface-alt: #173628;
+  --bg-bento-1: #193D2A;
+  --bg-bento-2: #2E381A;
+  --bg-bento-3: #12313C;
+  --bg-bento-4: #243029;
+  --text-main: #ECFDF5;
+  --text-muted: #A7F3D0;
+  --text-faint: #4B7A63;
+  --border-main: #1D4732;
+  --border-accent: #34D399;
+  --primary: #34D399;
+  --primary-hover: #6EE7B7;
+  --primary-light: #143826;
+  --primary-contrast: #07150E;
+  --mascot-body: #163625;
+  --mascot-shadow: #0C1E15;
+  --mascot-outline: #A7F3D0;
+  --mascot-accent: #34D399;
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  --shadow-lift: 0 12px 30px -4px rgba(52, 211, 153, 0.2);
+}
+
+html[data-theme='retro-pop'][data-mode='light'] {
+  --bg-page: #FAF8F2;
+  --bg-surface: #FFFFFF;
+  --bg-surface-hover: #FDFBF8;
+  --bg-surface-alt: #F0ECE0;
+  --bg-bento-1: #FFE4E6;
+  --bg-bento-2: #FEF08A;
+  --bg-bento-3: #DBEAFE;
+  --bg-bento-4: #CFFAFE;
+  --text-main: #18181B;
+  --text-muted: #52525B;
+  --text-faint: #8E8E93;
+  --border-main: #E2DCD0;
+  --border-accent: #2563EB;
+  --primary: #2563EB;
+  --primary-hover: #1D4ED8;
+  --primary-light: #EFF6FF;
+  --primary-contrast: #FFFFFF;
+  --mascot-body: #FFFDF9;
+  --mascot-shadow: #E2DCD0;
+  --mascot-outline: #18181B;
+  --mascot-accent: #F43F5E;
+  --shadow-card: 0 4px 20px -2px rgba(24, 24, 27, 0.06), 0 2px 6px -1px rgba(24, 24, 27, 0.03);
+  --shadow-lift: 0 12px 30px -4px rgba(37, 99, 235, 0.15);
+}
+
+html[data-theme='retro-pop'][data-mode='dark'] {
+  --bg-page: #0B111E;
+  --bg-surface: #121A2E;
+  --bg-surface-hover: #18233C;
+  --bg-surface-alt: #1B2744;
+  --bg-bento-1: #341F2D;
+  --bg-bento-2: #343016;
+  --bg-bento-3: #162E52;
+  --bg-bento-4: #12343F;
+  --text-main: #FAFAFA;
+  --text-muted: #94A3B8;
+  --text-faint: #4E617E;
+  --border-main: #25365C;
+  --border-accent: #FB7185;
+  --primary: #FB7185;
+  --primary-hover: #F43F5E;
+  --primary-light: #2C1A24;
+  --primary-contrast: #0B111E;
+  --mascot-body: #19243E;
+  --mascot-shadow: #0F1626;
+  --mascot-outline: #E2E8F0;
+  --mascot-accent: #38BDF8;
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  --shadow-lift: 0 12px 30px -4px rgba(251, 113, 133, 0.2);
+}
+
+/* Base Body Styles */
+@layer base {
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    border-color: var(--border-main);
+    box-sizing: border-box;
+  }
+}
+
+/* Custom Reusable Component Utilities */
+@layer components {
+  /* Bento Card Surface */
+  .card-bento {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-main);
+    border-radius: 1.25rem;
+    box-shadow: var(--shadow-card);
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.2s ease;
+  }
+
+  .card-bento-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lift);
+    border-color: var(--border-accent);
+  }
+
+  /* Tactile Interactive Button */
+  .btn-theme-primary {
+    background-color: var(--primary);
+    color: var(--primary-contrast);
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.875rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.15s ease;
+    box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-theme-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px -1px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn-theme-primary:active {
+    transform: translateY(1px);
+  }
+
+  .btn-theme-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .btn-theme-secondary {
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+    border: 1px solid var(--border-main);
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.875rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.15s ease;
+  }
+
+  .btn-theme-secondary:hover {
+    background-color: var(--bg-surface-hover);
+    border-color: var(--border-accent);
+    color: var(--primary);
+  }
+
+  /* Form Input */
+  .input-theme {
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-main);
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+    font-size: 0.875rem;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .input-theme:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+  }
+
+  .input-theme::placeholder {
+    color: var(--text-faint);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-main);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-faint);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   EXPLICIT UTILITY OVERRIDES
+   Tailwind v3 cannot apply opacity modifiers (e.g. /60) on CSS variable
+   color tokens because it needs the rgb-channel format. We define all
+   used opacity variants here as explicit utilities.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+@layer utilities {
+  /* bg-surface-alt variants */
+  .bg-surface-alt         { background-color: var(--bg-surface-alt); }
+  .bg-surface-alt\/30     { background-color: color-mix(in srgb, var(--bg-surface-alt) 30%, transparent); }
+  .bg-surface-alt\/40     { background-color: color-mix(in srgb, var(--bg-surface-alt) 40%, transparent); }
+  .bg-surface-alt\/50     { background-color: color-mix(in srgb, var(--bg-surface-alt) 50%, transparent); }
+  .bg-surface-alt\/60     { background-color: color-mix(in srgb, var(--bg-surface-alt) 60%, transparent); }
+  .bg-surface-alt\/70     { background-color: color-mix(in srgb, var(--bg-surface-alt) 70%, transparent); }
+  .bg-surface-alt\/80     { background-color: color-mix(in srgb, var(--bg-surface-alt) 80%, transparent); }
+
+  /* bg-surface-hover variants */
+  .bg-surface-hover       { background-color: var(--bg-surface-hover); }
+  .bg-surface-hover\/40   { background-color: color-mix(in srgb, var(--bg-surface-hover) 40%, transparent); }
+  .bg-surface-hover\/60   { background-color: color-mix(in srgb, var(--bg-surface-hover) 60%, transparent); }
+
+  /* bg-bento-* opacity variants */
+  .bg-bento-1\/40  { background-color: color-mix(in srgb, var(--bg-bento-1) 40%, transparent); }
+  .bg-bento-1\/50  { background-color: color-mix(in srgb, var(--bg-bento-1) 50%, transparent); }
+  .bg-bento-1\/70  { background-color: color-mix(in srgb, var(--bg-bento-1) 70%, transparent); }
+  .bg-bento-2\/40  { background-color: color-mix(in srgb, var(--bg-bento-2) 40%, transparent); }
+  .bg-bento-2\/50  { background-color: color-mix(in srgb, var(--bg-bento-2) 50%, transparent); }
+  .bg-bento-3\/40  { background-color: color-mix(in srgb, var(--bg-bento-3) 40%, transparent); }
+  .bg-bento-4\/40  { background-color: color-mix(in srgb, var(--bg-bento-4) 40%, transparent); }
+
+  /* border-primary (--primary) opacity variants */
+  .border-primary\/15 { border-color: color-mix(in srgb, var(--primary) 15%, transparent); }
+  .border-primary\/20 { border-color: color-mix(in srgb, var(--primary) 20%, transparent); }
+  .border-primary\/25 { border-color: color-mix(in srgb, var(--primary) 25%, transparent); }
+  .border-primary\/30 { border-color: color-mix(in srgb, var(--primary) 30%, transparent); }
+  .border-primary\/40 { border-color: color-mix(in srgb, var(--primary) 40%, transparent); }
+  .border-primary\/50 { border-color: color-mix(in srgb, var(--primary) 50%, transparent); }
+
+  /* border-edge opacity variants */
+  .border-edge\/60  { border-color: color-mix(in srgb, var(--border-main) 60%, transparent); }
+  .border-edge\/80  { border-color: color-mix(in srgb, var(--border-main) 80%, transparent); }
+
+  /* ring-primary variants */
+  .ring-primary\/30 { --tw-ring-color: color-mix(in srgb, var(--primary) 30%, transparent); }
+  .ring-primary\/50 { --tw-ring-color: color-mix(in srgb, var(--primary) 50%, transparent); }
+}

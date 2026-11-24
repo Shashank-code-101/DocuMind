@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+.env
+*.env.local
+
+# Node
+node_modules/
+dist/
+.vite/
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# SQLite & Local Databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Storage (do not commit uploaded files or vector DB)
+storage/
+backend/storage/uploads/*
+backend/storage/chroma_db/*
+!backend/storage/uploads/.gitkeep
+!backend/storage/chroma_db/.gitkeep
+
+# Test coverage & caches
+.coverage
+htmlcov/
+.pytest_cache/
+backend/.pytest_cache/
+
+# Alembic versions (committed intentionally)
+# backend/alembic/versions/
